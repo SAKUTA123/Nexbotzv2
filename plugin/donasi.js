@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 let text = `
 ┌─「 Donasi • Pulsa 」
-│ • *Telkomsel:* [${global.ppulsa}]
+│ • *Xl:* 6287760550924
 │ • *Telkomsel:* [${global.ppulsa2}]
 ❏────
 
