@@ -23,12 +23,12 @@ import syntaxerror from 'syntax-error';
 import { tmpdir } from 'os';
 import { format } from 'util';
 import { makeWASocket, protoType, serialize } from './lib/simple.js';
-import { Low, JSONFile } from 'lowdb';
+import { Low, JSONFile } from 'lowdb'
 import pino from 'pino';
-import {
+/* import {
   mongoDB,
   mongoDBV2
-} from './lib/mongoDB.js';
+} from './lib/mongoDB.js' */
 import store from './lib/storee.js'
 const {
   // useSingleFileAuthState,
@@ -86,7 +86,7 @@ global.loadDatabase = async function loadDatabase() {
 }
 loadDatabase()
 
-global.authFile = `${opts._[0] || 'NexBotz'}.data.json`
+global.authFile = `${opts._[0] || 'session'}.json`
 const { state, saveState } = store.useSingleFileAuthState(global.authFile)
 
 const connectionOptions = {
